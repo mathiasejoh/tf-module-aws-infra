@@ -29,7 +29,8 @@ remote_state {
   backend = "s3"
   config = {
     encrypt               = true
-    bucket                = "${local.account_vars.account_id}-tf-state-${local.account_vars.aws_region}"
+  # bucket                = "${local.account_vars.account_id}-tf-state-${local.account_vars.aws_region}"
+    bucket                = "devopsdemo-5erbjm"
     key                   = "skillupwithsachin-eks-cluster/${path_relative_to_include()}/terraform.tfstate"
     region                = local.account_vars.aws_region
     disable_bucket_update = true
