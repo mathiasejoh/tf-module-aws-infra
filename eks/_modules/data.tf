@@ -4,9 +4,9 @@ data "aws_region" "current" {}
 
 data "aws_vpc" "vpc" {
   filter {
-    name   = "tag:Name"
+    name = "tag:Name"
     values = [
-        "Demo-Test"
+      "Demo-Test"
     ]
   }
 }

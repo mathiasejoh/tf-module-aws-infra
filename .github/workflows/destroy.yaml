@@ -30,7 +30,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::138775093046:role/skillupwithsachin-gha-terraform-svc-role
-          aws-region: us-east-1
+          aws-region: us-west-2
 
       - name: Run Terragrunt Destroy
         working-directory: environments/dev/skillupwithsachin-eks-demo
