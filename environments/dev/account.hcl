@@ -1,4 +1,4 @@
 locals {
-    account_id = "138775093046"
-    aws_region = "us-east-1"
+    account_id = "475041569548"
+    aws_region = "us-west-2"
 }
