@@ -18,7 +18,7 @@ data "aws_subnets" "private_subnets" {
   }
 
   filter {
-    name = "tag:type"
+    name = "tag:Project"
     values = [
       "retail-store"
     ]
