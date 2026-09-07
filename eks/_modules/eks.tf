@@ -82,7 +82,7 @@ module "eks" {
     # One access entry with a policy associated
     cluster_admin = {
       kubernetes_groups = []
-      principal_arn     = "arn:aws:iam::${data.aws_caller_identity.current.id}::user/eks-cli-user"
+      principal_arn     = "arn:aws:iam::${data.aws_caller_identity.current.id}:user/eks-cli-user"
       policy_associations = {
         admin = {
           policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
